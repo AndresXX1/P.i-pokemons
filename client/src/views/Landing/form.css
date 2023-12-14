@@ -1,0 +1,106 @@
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  margin-top: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.dataContainer input {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100%;
+  transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.dataContainer input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dataContainer input.error {
+  border: 2px solid red;
+}
+
+.dataContainer input:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+.dataContainer button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 35px;
+    background-color: rgb(38, 123, 123);
+    color: white;
+    padding: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+
+.dataContainer button:hover {
+    background-color: rgb(18, 93, 93);
+  }
+.error {
+  color: red;
+}
+
+/* Ajustes para el cuadro de términos y condiciones */
+.termsContainer {
+  border: 2px solid red; 
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  max-width: 40%;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: border-color 0.3s ease-in-out;
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #2c3e50;
+}
+
+.termsContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.termsContainer::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 10px;
+}
+
+.termsValid {
+  border-color: green;
+}
+
+.termsInvalid {
+  border-color: red;
+}
+
+.dataContainer input.valid {
+    border: 2px solid green;
+  }
+
+  .dataContainer input:-webkit-autofill,
+.dataContainer input:-webkit-autofill:hover,
+.dataContainer input:-webkit-autofill:focus,
+.dataContainer input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Desactiva el resaltado del autocompletado */
+.dataContainer input:-internal-autofill-selected {
+  background-color: transparent !important;
+}

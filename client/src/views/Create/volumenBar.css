@@ -1,0 +1,37 @@
+.volume-bar-container {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+  }
+  
+  .volume-bar {
+    height: 10px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 15px; /* Ajusta según sea necesario para el lado izquierdo */
+    margin-right: 10px; /* Ajusta según sea necesario para el lado derecho */
+    width: calc(100% - 10px); /* Ajusta según sea necesario para el ancho total */
+  }
+  
+  .volume-label {
+    position: absolute;
+    top: calc(100% + -20px); /* Ajusta el espacio superior según tus necesidades */
+    left: 97%;
+    transform: translateX(-60%);
+    background-color: rgba(35, 60, 199, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgba(243, 242, 234, 0.799);
+    width: 35px;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 3px; /* Ajusta el margen derecho según tus necesidades */
+    margin-left: calc(15px);
+    margin-bottom: 15px;
+  }
+  
+ 
+
+

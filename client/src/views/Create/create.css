@@ -1,0 +1,209 @@
+.container {
+  background-image: url("https://images.nintendolife.com/5da7b581eabd6/team-rocket.large.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Hace que la imagen de fondo sea fija */
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.form-and-preview-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  max-width: 90vw; /* Limita el ancho máximo al 90% del ancho de la ventana */
+  max-height:60vw;
+}
+
+.form-container {
+  background-color: rgba(123, 118, 136, 0.8);
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Ocupa el 100% del ancho disponible */
+  max-width: 400px; /* Limita el ancho máximo */
+  margin-left: 20px; /* Margen a los lados para centrar */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+}
+
+.preview-container {
+  background-color: rgba(123, 118, 136, 0.8);
+  width: 370px; /* Modifica el ancho según tus necesidades */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(193, 27, 27, 0.2);
+}
+
+.form-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+.form-input {
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent !important;
+  color: white;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.form-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  background-clip: text !important;
+}
+
+.form-input:-webkit-autofill::first-line {
+  color: white !important;
+}
+
+.error-message {
+  color: rgb(245, 24, 24);
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.checkbox-label {
+  color: rgba(255, 255, 255, 0.591);
+}
+
+.checkbox-label input[type="checklist"] {
+  margin-right: 5px;
+}
+
+.submit-button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #007acc;
+}
+
+
+.image-preview {
+  width: 365px; /* Ancho mínimo */
+  height: 200px; /* Altura mínima */
+  border: 1px solid rgba(123, 118, 136, 0.8);
+  border-radius: 0px;
+  margin-top: 0px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+.preview-bar {
+  margin-top: 10px;
+  
+}
+
+.tipos {
+  
+  border: 3px solid rgba(255, 255, 255, 0.284); 
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 200px;
+  margin-top: -5px;
+  margin-bottom: -10px;
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+
+.preview-container{
+  box-sizing: border-box 10px;
+  border: 2px solid rgb(181, 181, 181);
+  border-radius: 5px;
+  position: relative;
+}
+
+.feactures-container {
+  box-sizing: border-box 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+
+}
+
+.lado{
+  margin-right: 300px;
+  color: white
+}
+
+.lado-ultimo{
+  margin-right: 300px;
+  color: white
+}
+
+.titulo {
+  border: 3px solid rgba(255, 255, 255, 0.544);
+  background-color: rgba(0, 123, 255, 0.531);
+  color: white;
+  border-left: 20px;
+  border-top: -10px;
+  border-right: 20px;
+
+}
+
+.nombre {
+  width: 370px; /* Ancho fijo */
+  height: 40px; /* Altura fija */
+  border: 2px solid rgba(255, 255, 255, 0.605);
+  border-radius: 5PX;
+  overflow: hidden; /* Evitar que el contenido sobresalga del cuadro */
+  position: relative;
+  color: rgb(255, 253, 253);
+  margin-top: -15px;
+}
+
+.nombre h3 {
+  margin: 0; /* Eliminar el margen del h3 para un aspecto más limpio */
+  white-space: nowrap; /* Evitar saltos de línea dentro del h3 */
+  overflow: hidden; /* Ocultar el contenido que se desborda del h3 */
+  text-overflow: ellipsis; /* Agregar puntos suspensivos (...) si el texto es demasiado largo */
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.nombre-nivel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lvl{
+  color: white;
+}

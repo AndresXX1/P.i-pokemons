@@ -1,0 +1,13 @@
+/* home.css */
+.home {
+  background-image: url("https://i.pinimg.com/originals/39/73/a5/3973a5c172a36edd9374db1b4cd522ec.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: static;
+}
+
+.pagination-buttons{
+  margin-bottom: navpx;
+}

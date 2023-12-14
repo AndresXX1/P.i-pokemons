@@ -1,0 +1,44 @@
+.landing{
+  background-image: url(https://i.pinimg.com/originals/b8/83/fc/b883fc84b57235e6fe57f409716ae68d.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Ajustar la altura al 100% del viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start{
+     text-align: center;
+	display: inline-block;
+	margin:5px;
+  width: 80px;
+     font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: rgb(93, 91, 91);
+	  border-radius: 7px;
+    box-shadow: 0 .2em rgb(112, 111, 111); 
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.pokelogo{
+  background-image: url("../../img/landing/pokelogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 200px;
+  margin-bottom: -50px
+}
+
+.Creador {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: small;
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+

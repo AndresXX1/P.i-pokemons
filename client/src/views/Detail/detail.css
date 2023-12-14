@@ -1,0 +1,182 @@
+.pokedex {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/012/678/563/non_2x/abstract-futuristic-gaming-background-overlay-for-copy-space-metal-plate-wallpaper-for-live-streaming-monitor-display-vector.jpg");
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgb(113, 177, 97);
+}
+
+.detail {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -30px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: small;
+}
+
+.detail img {
+  max-width: 200px;
+}
+
+.properties-column {
+  display: flex;
+}
+
+.properties-column p {
+  margin-left: 20px;
+}
+
+.detail h3 {
+  position: absolute;
+  top: 105%;
+}
+
+.types {
+  position: absolute;
+  top: 123.4%;
+  left: 0;
+}
+
+.buttonDetail {
+  border-radius: 10px;
+  background-color: rgb(22, 67, 203);
+  border: 2px;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: white;
+}
+
+.stars .gold {
+  color: gold;
+}
+
+.volume-bars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.volume-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+ 
+}
+
+.volume-bar {
+  height: 20px;
+  background-color: green;
+  max-width: 250px;
+}
+
+.volume-label {
+  position: absolute;
+  top: calc(100% + -20px); /* Ajusta el espacio superior según tus necesidades */
+  left: 97%;
+  transform: translateX(-60%);
+  background-color: rgba(35, 60, 199, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  color: rgba(243, 242, 234, 0.799);
+  width: 35px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 3px; /* Ajusta el margen derecho según tus necesidades */
+  margin-left: calc(15px);
+  margin-bottom: 15px;
+}
+
+.lado-attack {
+  color: white;
+  margin-right: 15px;
+}
+
+.nom {
+  color: rgb(255, 253, 253);
+  margin-top: 15px;
+  margin-bottom: -90px;
+}
+
+.bottonBar{
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.boton{
+  margin-top: 30px;
+}
+
+.stars{
+  color: white
+}
+
+.typess{
+  color: white
+}
+
+.feacturess{
+  border: 1px solid rgb(3, 172, 233, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(3, 172, 233, 0.5)
+
+}
+
+.boton1{
+  margin-left: 15px;
+  margin-top: 30px;
+  
+}
+
+.imagen {
+  width: 400px; /* Ancho mínimo */
+  height: 400px; /* Altura mínima */
+  
+ 
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://static.vecteezy.com/system/resources/previews/012/678/563/non_2x/abstract-futuristic-gaming-background-overlay-for-copy-space-metal-plate-wallpaper-for-live-streaming-monitor-display-vector.jpg') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-overlay img {
+  width: 100px; /* Ajusta el tamaño de tu imagen de carga según sea necesario */
+  height: 100px; /* Ajusta el tamaño de tu imagen de carga según sea necesario */
+}
+
+.id{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,46 @@
+.bottom-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(3, 172, 233, 0.5); /* Fondo claro y transparente */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.pokemon-button {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.713); /* Sombra ligera */
+}
+
+.pokemon-button img {
+  width: 90px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.pokemon-button img:hover {
+  transform: scale(1.2);
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+.arrow:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
