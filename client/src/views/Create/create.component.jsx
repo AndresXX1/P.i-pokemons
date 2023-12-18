@@ -13,6 +13,7 @@ const PostPokemon = () => {
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState("");
   const types = useSelector((state) => state.types);
+  const pokemons = useSelector((state) => state.pokemons); // Agregamos la obtención de la lista de Pokémon
   const [volume, setVolume] = useState([
     { attribute: "hp", value: 0, stars: false },
     { attribute: "attack", value: 0, stars: false },
@@ -55,17 +56,16 @@ const PostPokemon = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-  
-    if (name === 'name' || name === 'sprites') {
+
+    if (name === "name" || name === "sprites") {
       setInput((prevInput) => ({
         ...prevInput,
         [name]: value,
       }));
-      if (name === 'sprites') {
+      if (name === "sprites") {
         setImageUrl(value);
       }
     } else {
-      const selectedType = Number(value);
       setInput((prevInput) => ({
         ...prevInput,
         [name]: Number(value),
@@ -81,9 +81,25 @@ const PostPokemon = () => {
   };
 
   const handleBlur = () => {
-    const newErrors = validation(input);
+    const newErrors = validation(input, pokemons);
     setErrors(newErrors);
+  
+
+    // Validación adicional para el nombre duplicado
+    if (pokemons) {
+      const isNameDuplicate = pokemons.some(
+        (pokemon) => pokemon.name.toLowerCase() === input.name.toLowerCase()
+      );
+
+      if (isNameDuplicate) {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          name: "¡Error! Este nombre de Pokémon ya ha sido utilizado.",
+        }));
+      }
+    }
   };
+
 
   const getSelectedTypeNames = () => {
     return types
